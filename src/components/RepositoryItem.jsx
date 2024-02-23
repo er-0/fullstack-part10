@@ -15,12 +15,6 @@ const styles = StyleSheet.create({
     marginRight: 10,
     borderRadius: 6,
   },
-  bubble: {
-    backgroundColor: theme.colors.primary,
-    color: 'white',
-    padding: 5,
-    borderRadius: 5,
-  },
   bio: {
     flexDirection: 'row',
     padding: 10,
@@ -53,7 +47,7 @@ const RepositoryItem = ({ item }) => {
             <Text style={{ flexWrap: 'wrap', width: 300 }}>{item.description}</Text>
           </View>
           <View alignSelf='flex-start'>
-            <Text style={styles.bubble}>{item.language}</Text>
+            <Text style={theme.bubble}>{item.language}</Text>
           </View>
         </View>
       </View>

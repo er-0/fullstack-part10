@@ -29,12 +29,12 @@ const styles = StyleSheet.create({
   },
 });
 
-const Text = ({ color, backgroundColor, fontSize, fontWeight, style, ...props }) => {
+const Text = ({ color, fontSize, fontWeight, style, ...props }) => {
   const textStyle = [
     styles.text,
     color === 'textAppBar' && styles.colorTextAppBar,
     color === 'textSecondary' && styles.colorTextSecondary,
-    backgroundColor === 'primary' && styles.colorPrimary,
+    color === 'primary' && styles.colorPrimary,
     fontSize === 'subheading' && styles.fontSizeSubheading,
     fontSize === 'heading' && styles.fontSizeHeading,
     fontWeight === 'bold' && styles.fontWeightBold,
